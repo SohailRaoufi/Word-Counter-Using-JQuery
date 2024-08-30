@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+:root {
+  --white: #ffffff;
+  --gray: #e5e5e5;
+  --yellowesh: #fca311;
+  --darkblue: #14213d;
+  --black: #000000;
+}
+
+body {
+  background-color: var(--darkblue);
+}
+.main-box {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.main-box .counter-head {
+  color: var(--yellowesh);
+  padding: 1rem 0 1rem 0;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3rem;
+}
+.box {
+  background-color: var(--white);
+  text-align: center;
+  height: 35rem;
+  width: 35rem;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.box textarea {
+  resize: none;
+  background-color: rgb(255, 251, 251);
+}
+.box textarea:focus {
+  box-shadow: 0 0 8px var(--yellowesh);
+}
+.box .counter-box {
+  margin: 1rem 0;
+  width: 100%;
+}
+.box .counter-box .numbers {
+  margin-left: auto;
+}
+footer .container {
+  text-align: center;
+  color: var(--yellowesh);
+  padding-bottom: 1rem;
+  font-weight: 500;
+}
+
+@media (max-width: 605px) {
+  .main-box .counter-head {
+    font-size: 2rem;
+  }
+  .main-box .box {
+    height: 30rem;
+    width: 30rem;
+  }
+  .main-box textarea {
+    height: 17rem;
+  }
+}
+
+@media (max-width: 540px) {
+  .main-box .counter-head {
+    font-size: 2rem;
+  }
+  .main-box .box {
+    height: 25rem;
+    width: 25rem;
+  }
+  .main-box textarea {
+    height: 12rem;
+  }
+}
